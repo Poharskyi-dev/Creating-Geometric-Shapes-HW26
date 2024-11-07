@@ -13,6 +13,6 @@ public class Square extends Rectangle {
 
     @Override
     public void displayInfo(){
-        System.out.println(shapeType + " area is " + calculateArea());
+        super.displayInfo();
     }
 }

@@ -20,7 +20,7 @@ public class Shape {
     }
 
     public void displayInfo(){
-        System.out.println("Abstract shape with shape type " + shapeType);
+        System.out.println(shapeType + " area is " + calculateArea());
     }
 
 }
