@@ -11,6 +11,10 @@ public class Square extends Rectangle {
         return super.calculateArea();
     }
 
+    public double calculatePerimeter(){
+        return 4 * getHeight();
+    }
+
     @Override
     public void displayInfo(){
         super.displayInfo();

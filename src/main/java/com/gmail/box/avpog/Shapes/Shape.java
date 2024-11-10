@@ -1,8 +1,9 @@
 package com.gmail.box.avpog.Shapes;
 
-public class Shape {
+public abstract class Shape {
     ShapeType shapeType;
 
+    //
     public ShapeType getShapeType() {
         return shapeType;
     }
@@ -11,16 +12,18 @@ public class Shape {
         this.shapeType = shapeType;
     }
 
+    //
     public Shape(ShapeType shapeType) {
         this.shapeType = shapeType;
     }
 
-    public double calculateArea() {
-        return 0;
-    }
+    abstract double calculateArea();
 
-    public void displayInfo(){
+    abstract double calculatePerimeter();
+
+    public void displayInfo() {
         System.out.println(shapeType + " area is " + calculateArea());
+        System.out.println("and perimeter is " + calculatePerimeter());
     }
 
 }

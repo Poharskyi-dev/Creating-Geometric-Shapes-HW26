@@ -13,6 +13,10 @@ public class Circle extends Shape {
         return 3.14 * radius * radius;
     }
 
+    public double calculatePerimeter(){
+        return 3.14 * 2 * radius;
+    }
+
     @Override
     public void displayInfo() {
         super.displayInfo();
